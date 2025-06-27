@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btnOverlayPermission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OVERLAY PERMISSION"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnStartOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="START OVERLAY"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btnNextPage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NEXT PAGE"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#B388FF"
+            android:textColor="#222"/>
+
+        <!-- Section 1 (with two balls, including third ball) -->
+        <include layout="@layout/section_box" android:id="@+id/section1"/>
+
+        <!-- Section 2 -->
+        <include layout="@layout/section_box" android:id="@+id/section2"/>
+
+        <!-- Section 3 (no border, only ball size and count controls) -->
+        <LinearLayout
+            android:id="@+id/section3"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:padding="12dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Third Ball (First Border ke andar hi dikhai dega)"
+                android:textColor="#388E3C"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ball Size"
+                android:textColor="#444"
+                android:textSize="16sp"/>
+
+            <SeekBar
+                android:id="@+id/seekBallSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="200"
+                android:progress="40"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:id="@+id/tvBallCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textSize="20sp"
+                    android:textColor="#222"
+                    android:layout_marginEnd="16dp"/>
+
+                <Button
+                    android:id="@+id/btnSetBall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SET BALL"
+                    android:backgroundTint="#D1B3FF"
+                    android:textColor="#222"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Section 4 -->
+        <include layout="@layout/section_box" android:id="@+id/section4"/>
+
+        <!-- Start/Stop buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btnStart"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="START"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="#B388FF"
+                android:textColor="#222"/>
+
+            <Button
+                android:id="@+id/btnStop"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="STOP"
+                android:backgroundTint="#B388FF"
+                android:textColor="#222"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
