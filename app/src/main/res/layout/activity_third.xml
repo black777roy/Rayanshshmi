@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Word List Section -->
+        <TextView
+            android:text="Word List (Max 1000)"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etWord"
+                android:hint="Add Word"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnAddWord"
+                android:text="Add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvWordList"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Heading for Section 1 (Milliseconds) -->
+        <TextView
+            android:text="Ball kitna time tak click rahega"
+            android:textStyle="bold"
+            android:textColor="#388E3C"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"/>
+
+        <!-- Section 1: Only Millisecond -->
+        <TextView
+            android:text="Section 1 (Millisecond)"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etMilli1"
+                android:hint="Ms"
+                android:inputType="number"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnAddTime1"
+                android:text="Add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTimeList1"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Section 2: Second + Millisecond -->
+        <TextView
+            android:text="Section 2 (Second + Millisecond)"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etSecond2"
+                android:hint="Sec"
+                android:inputType="number"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/etMilli2"
+                android:hint="Ms"
+                android:inputType="number"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnAddTime2"
+                android:text="Add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTimeList2"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Section 3: Second + Millisecond -->
+        <TextView
+            android:text="Section 3 (Second + Millisecond)"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etSecond3"
+                android:hint="Sec"
+                android:inputType="number"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/etMilli3"
+                android:hint="Ms"
+                android:inputType="number"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnAddTime3"
+                android:text="Add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTimeList3"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Section 4: Second + Millisecond -->
+        <TextView
+            android:text="Section 4 (Second + Millisecond)"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etSecond4"
+                android:hint="Sec"
+                android:inputType="number"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/etMilli4"
+                android:hint="Ms"
+                android:inputType="number"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnAddTime4"
+                android:text="Add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTimeList4"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- First Border Section -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BDBDBD"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:text="First Border Ball Click Time"
+            android:textStyle="bold"
+            android:textColor="#388E3C"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:text="(Second + Millisecond)"
+            android:textStyle="italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etFirstBorderSec"
+                android:hint="Sec"
+                android:inputType="number"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/etFirstBorderMs"
+                android:hint="Ms"
+                android:inputType="number"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnAddFirstBorderTime"
+                android:text="Add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvFirstBorderTime"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Second Border Section -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BDBDBD"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:text="Second Border Ball Click Time"
+            android:textStyle="bold"
+            android:textColor="#388E3C"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:text="(Second + Millisecond)"
+            android:textStyle="italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etSecondBorderSec"
+                android:hint="Sec"
+                android:inputType="number"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/etSecondBorderMs"
+                android:hint="Ms"
+                android:inputType="number"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnAddSecondBorderTime"
+                android:text="Add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvSecondBorderTime"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Third Border Section -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BDBDBD"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:text="Third Border Ball Click Time"
+            android:textStyle="bold"
+            android:textColor="#388E3C"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:text="(Second + Millisecond)"
+            android:textStyle="italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etThirdBorderSec"
+                android:hint="Sec"
+                android:inputType="number"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/etThirdBorderMs"
+                android:hint="Ms"
+                android:inputType="number"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnAddThirdBorderTime"
+                android:text="Add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvThirdBorderTime"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Fourth Border Section -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BDBDBD"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:text="Fourth Border Ball Click Time"
+            android:textStyle="bold"
+            android:textColor="#388E3C"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:text="(Second + Millisecond)"
+            android:textStyle="italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etFourthBorderSec"
+                android:hint="Sec"
+                android:inputType="number"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/etFourthBorderMs"
+                android:hint="Ms"
+                android:inputType="number"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnAddFourthBorderTime"
+                android:text="Add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvFourthBorderTime"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+</ScrollView>

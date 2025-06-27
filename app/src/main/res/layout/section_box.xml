@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:padding="12dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Box Width"
+        android:textColor="#444"
+        android:textSize="16sp"/>
+
+    <SeekBar
+        android:id="@+id/seekBoxWidth"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="900"
+        android:progress="300"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Box Height"
+        android:textColor="#444"
+        android:textSize="16sp"/>
+
+    <SeekBar
+        android:id="@+id/seekBoxHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="900"
+        android:progress="200"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ball Size"
+        android:textColor="#444"
+        android:textSize="16sp"/>
+
+    <SeekBar
+        android:id="@+id/seekBallSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="200"
+        android:progress="40"/>
+
+    <!-- Box with border and ball inside -->
+    <FrameLayout
+        android:id="@+id/boxContainer"
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+
+        <View
+            android:id="@+id/ballView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ball_shape"
+            android:layout_gravity="top|start"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/tvBallCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textSize="20sp"
+            android:textColor="#222"
+            android:layout_marginEnd="16dp"/>
+
+        <Button
+            android:id="@+id/btnSetBall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SET BALL"
+            android:backgroundTint="#D1B3FF"
+            android:textColor="#222"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</LinearLayout>

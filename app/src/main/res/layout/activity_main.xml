@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222222">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rayanshshmi"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/btnSetDefaultKeyboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SET DEFAULT KEYBOARD"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnNextPage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NEXT PAGE"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnAccessibility"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ACCESSIBILITY SETTINGS"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Naya Button -->
+        <Button
+            android:id="@+id/btnTypeRandomWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Type Random Word"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/etInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type here"
+            android:textColor="#FFFFFF"
+            android:background="#333333"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp"/>
+
+        <GridLayout
+            android:id="@+id/keyboardGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="10"
+            android:rowCount="4"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+</ScrollView>
